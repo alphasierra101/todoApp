@@ -9,7 +9,7 @@
 
 body {
   font-family: "Lobster", cursive;
-  background-image: url(/bgImage.jpg);
+  background-image: url(bgImage.jpg);
   justify-content: center;
   align-items: center;
   height: 100vh;
