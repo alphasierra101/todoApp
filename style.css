@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lobster", cursive;
+  background-image: url(/bgImage.jpg);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.app {
+  height: 500px;
+  width: 300px;
+  border: 10px solid darkgrey;
+  border-radius: 40px;
+  padding: 10px;
+  /* background-color:rgb(205, 218, 205); */
+  overflow-y: scroll;
+  box-shadow: 5px 5px 10px;
+  background-color: transparent;
+}
+
+h1 {
+  color: white;
+}
+
+h5 {
+  /* overflow: hidden; */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: rgb(156, 190, 219);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 2px 2px 1px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#addNew {
+  background-color: rgb(164, 185, 185);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 8px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 5px 0;
+  box-shadow: 2px 2px 5px;
+  /* font-size: 18px; */
+  transition: transform 0.5s ease-in-out;
+}
+
+#addNew:hover {
+  transform: scale(1.01);
+}
+
+#addNewTask {
+  padding-left: 67px;
+}
+
+.fa-plus {
+  background-color: rgb(184, 204, 204);
+  border-radius: 10px;
+  padding: 4px;
+  box-shadow: 2px 2px 5px;
+}
+
+#tasks {
+  display: grid;
+  gap: 8px;
+}
+
+#tasks div {
+  font-family: "Dancing Script", cursive;
+  background-color: rgba(226, 231, 233, 0.815);
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  box-shadow: 2px 2px 5px;
+  transition: transform 0.5s ease-in-out;
+}
+
+#tasks div:hover {
+  transform: scale(1.02);
+}
+
+.options {
+  justify-self: center;
+  display: flex;
+  gap: 25px;
+}
+
+.options i {
+  cursor: pointer;
+}
+
+#msg {
+  color: red;
+}
